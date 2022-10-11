@@ -1,13 +1,15 @@
 body {
     display: flex;
     justify-content: center;
+    background-color: yellow;
 }
+
 section.grid-container {
     display: grid;
     max-width: 1000px;
    width: 100%;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 180px 60px 400px 100px;
+    grid-template-rows: 180px 60px minmax(300px, auto) 100px;
     gap: 1rem;
 }
 
@@ -16,18 +18,27 @@ section.grid-container {
 }
 
 header {
-    grid-column: 1 / 7;
+  grid-column: auto / span 6;
 }
+
 nav {
-    grid-column: 1 / 7;
+   grid-column: auto / span 6;
 }
 main {
-    grid-column: 1 / 5;
+  grid-column: auto / span 4;
 }
 aside {
-    grid-column: 5 / 7;
+    grid-column: auto / span 2;
 }
 
 footer {
-    grid-column: 1 / 7;
+    grid-column: auto / span 6;
+}
+
+@media screen and (max-width: 200px) {
+
+    .grid-container > * {
+        grid-column: auto / span 7;
+    }
+
 }
