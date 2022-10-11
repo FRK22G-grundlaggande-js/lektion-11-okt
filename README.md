@@ -1,2 +1,3 @@
-# lektion-11-okt
-Grids, grid everywhere!
+# Hello Grid world!
+
+**Lektion 11 okt**
