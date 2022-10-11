@@ -1,0 +1,27 @@
+main.grid-container {
+    max-width: 1000px;
+    outline: 1px solid red;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 200px 400px;
+    gap: 1rem;
+}
+
+header {
+    background-color: mediumaquamarine;
+    padding: 1rem;
+    grid-column: 1 / 7;
+}
+
+section {
+    background: salmon;
+    padding: 1rem;
+    grid-column: 1 / 5;
+}
+
+aside {
+    background: yellow;
+    padding: 1rem;
+    grid-column: 5 / 7;
+}
