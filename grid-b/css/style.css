@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+section.grid-container {
+    display: grid;
+    max-width: 1000px;
+   width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 180px 60px 400px 100px;
+    gap: 1rem;
+}
+
+.grid-container > * {
+    background-color: rgb(204, 204, 204);
+}
+
+header {
+    grid-column: 1 / 7;
+}
+nav {
+    grid-column: 1 / 7;
+}
+main {
+    grid-column: 1 / 5;
+}
+aside {
+    grid-column: 5 / 7;
+}
+
+footer {
+    grid-column: 1 / 7;
+}
